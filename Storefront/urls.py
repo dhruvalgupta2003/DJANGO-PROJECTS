@@ -20,5 +20,7 @@ from django.urls.conf import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Gamezone/', include('Gamezone.urls'))
+    path('Gamezone/', include('Gamezone.urls')),
+     path('__debug__/', include('debug_toolbar.urls'))
 ]
+ 
